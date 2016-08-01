@@ -1,0 +1,21 @@
+===========================================
+                 FLHI
+     Fuzzy Logic Hypercube Interpolator
+===========================================
+
+FLHI is a generalized interpolator obtained by fuzzy inference rules. Membership functions, t-norms and deffuzification rule all influence the end result of the interpolator.
+
+In its standard form FLHI is presented using product t-norm and first moment of area deffuzification. Membership functions act as interpolation kernels and determine interpolation characteristics. This allows FLHI to present itself as a common interpolator such as nearest neighbor, linear, cubic, Lanczos or a Spline, for n-dimensions.
+
+Interpolation occurs in an unitary space which can be extended to n-dimensions, that is, an hypercube of fuzzy logic.
+
+FLHI is made further unique by its ability to reverse the interpolated function, therefore FLHI is able to interpolate both a function and its inverse function. This feature can be applied to multivariable functions as well as single variable functions.
+
+Other interpolators may be created according to the choice of kernel membership functions, t-norm or deffuzification rule.
+
+FLHI in its current form is unable to interpolate:
+ - Multivalued functions (only injective relationships can be mapped in the direct function, this does not apply to inverse function)
+ - Sparse data (only regular or semi-regular grids)
+ 
+Current code is presented as a proof-of-concept (POC).
+
